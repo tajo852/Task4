@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: #FCE6F2;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      height: 500px;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFF;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: inline-block;
+      width: 150px;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+      width: 200px;
+      padding: 5px;
+    }
+
+    .form-group .gender-label {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px;
+    }
+
+    .form-group .checkbox-label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-group .checkbox-label input[type="checkbox"] {
+
+      margin-left: 20px;
+    }
+
+    .center-btns {
+      text-align: center;
+    }
+
+    .center-btns button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #FF69B4;
+      border: none;
+      border-radius: 5px;
+      color: #FFF;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="gender-label">
+          <label>
+            <input type="radio" name="gender" value="male"> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female"> Female
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+
+        <label>Select Courses:</label>
+        <label class="checkbox-label">
+
+          <input type="checkbox" name="course" value="python"> Python</label>
+        <label class="checkbox-label">
+
+          <input type="checkbox" name="course" value="webdev"> HTML
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="course" value="visualstudio"> Visual Studio
+        </label>
+      </div>
+
+
+      <div class="center-btns">
+        <button type="button">OK</button>
+        <button type="button">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
